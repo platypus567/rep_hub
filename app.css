@@ -1,4 +1,7 @@
-html {}
+html {
+    /* background-color: gray IMPOR !important; */
+    /* why doesnt this work? */
+}
 
 body {}
 
@@ -7,6 +10,17 @@ body {}
     background-color: #7209B7;
     background-image: linear-gradient(to bottom right, #F72585, #7209B7);
     border-bottom: 10px solid black;
+
+    /* the basic bg at the top of the page on every page */
+}
+
+.bg-gradient-alt {
+    height: 210px;
+    background-color: #7209B7;
+    background-image: linear-gradient(to top right, #F72585, #4CC9F0);
+    border-bottom: 10px solid rgb(63, 63, 63);
+
+    /* the basic bg at the top of the page on every page , repeated , with different colors*/
 }
 
 .logo-text {
@@ -36,4 +50,49 @@ body {}
 .search-button {
     display: block;
     margin: auto;
+}
+
+.error-bg-lr {
+    height: 820px;
+    background-color: #7209B7;
+    background-image: linear-gradient(to bottom right, #4CC9F0, #3A0CA3);
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
+
+    /* this is the text box, along with a bg gradient for the "error" message html page (error.html)  */
+}
+
+.error-bg-md {
+    height: 520px;
+    background-color: #7209B7;
+    background-image: linear-gradient(to bottom right, #4CC9F0, #F72585);
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
+}
+
+.error-bg-sm {
+    height: 220px;
+    background-color: #7209B7;
+    background-image: linear-gradient(to bottom right, #7209B7, #4361EE);
+    border-bottom: 10px solid burlywood;
+    border-top: 10px solid burlywood;
+}
+
+.error-bg-xtra {
+    height: 1220px;
+    background-color: #7209B7;
+    background-image: linear-gradient(to bottom right, #4CC9F0, #3A0CA3);
+    border-bottom: 10px solid grey;
+    border-top: 10px solid grey;
+
+    /* FUTURE; add more than 2 color gradient here */
+
+}
+
+/* in the future a function can be added to randomize these presentation to the user on the ("/error.html"). It'd randomly choose one of the four above classes for the sole container class on the ("/error.html") page. */
+/* ^^^ random idea for the future when I learn more JS */
+
+error-text {
+    color: white;
+    /* font-size: xx-large; This is actually handled by built in bootsrap commands. */
 }
