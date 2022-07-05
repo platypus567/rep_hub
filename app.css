@@ -1,10 +1,27 @@
 html {
     /* background-color: gray IMPOR !important; */
     /* why doesnt this work? */
+    width: 100%;
 }
 
-body {}
+body {
+    background-color: rgb(192, 192, 192);
+}
 
+#header-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#body-copy{
+    background-color: white;
+    border-radius: 25px;
+}
+
+.wrapper{
+    display: flex;
+
+}
 .bg-gradient {
     height: 210px;
     background-color: #7209B7;
@@ -39,16 +56,18 @@ body {}
     color: #3c0779;
 }
 
-/* .search-box {
+ .search-box {
     font-size: 50px;
     border: 2px solid black;
-    display: block;
+    display: inline;
     margin: auto;
-} */
+    width: 700px;
+    height: 50px;
+} 
 /* Uncomment the above to override the default bootstrap search bar look. display and margin are still unncessary as long as the bootsrap class form-control is present. */
 
 .search-button {
-    display: block;
+    display: inline;
     margin: auto;
 }
 
@@ -96,3 +115,22 @@ error-text {
     color: white;
     /* font-size: xx-large; This is actually handled by built in bootsrap commands. */
 }
+
+@media (max-width: 800px) {
+    html{
+        width: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .search-box{
+        width: 100%;
+    }
+}
+/* fixes search bar and header going not fully across screen, and alignments
+/* DO NOT TOUCH OR THE STYLES WILL BREAK
