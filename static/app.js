@@ -1,4 +1,4 @@
-let username = document.querySelector('#searchBar')
+let username = document.querySelector('#mySearch')
 let button = document.querySelector('#searchBtn')
 let firstScreen = document.querySelector('#firstScreen')
 let secondScreen = document.querySelector('#secondScreen')
