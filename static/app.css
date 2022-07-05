@@ -7,8 +7,14 @@ html {
 
 body {
     background-color: rgb(192, 192, 192);
-}
+    height: 100%;
 
+}
+#flex-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #header-div{
     display: flex;
     align-items: center;
@@ -35,6 +41,12 @@ body {
     border-color: #7209B7;
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em #7209B7;
+}
+
+#text-block{
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 80%
 }
 
 .wrapper{
