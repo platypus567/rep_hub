@@ -25,8 +25,8 @@ body {
 .bg-gradient {
     height: 210px;
     background-color: #7209B7;
-    background-image: linear-gradient(to bottom right, #F72585, #7209B7);
-    border-bottom: 10px solid black;
+    background-image: linear-gradient(to top right, #F72585, #7209B7);
+    border-bottom: 10px solid rgb(63, 63, 63);
 
     /* the basic bg at the top of the page on every page */
 }
@@ -34,7 +34,7 @@ body {
 .bg-gradient-alt {
     height: 210px;
     background-color: #7209B7;
-    background-image: linear-gradient(to top right, #F72585, #4CC9F0);
+    background-image: linear-gradient(to top right, #F72585, #7209B7);
     border-bottom: 10px solid rgb(63, 63, 63);
 
     /* the basic bg at the top of the page on every page , repeated , with different colors*/
