@@ -13,7 +13,6 @@ class SearchForm(FlaskForm):
     submit = SubmitField("Search")
 
 
-
 @app.route("/")
 def home():
     form = SearchForm()
@@ -31,9 +30,6 @@ def find_user():
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('error.html'), 404
-
-
-
 
 if __name__ == "__main__":
     app.run(debug=True)

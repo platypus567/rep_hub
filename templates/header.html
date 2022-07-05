@@ -12,12 +12,19 @@
   <link rel="stylesheet" href="static/app.css">
 
 
-  <title>Rep_Hub.io - Reputation Tracker for GitHub Users</title>
+  <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
 <div class="container-fluid bg-gradient-alt" id="header-div">
     <h1 class="logo-text text-center"><span id="rep">REP</span><span id="hub">_HUB</span><span id="dot-io">.IO</span>
     </h1>
   </div>
+    {% block content %}
+
+
+
+    {% endblock %}
+
+
 </body>
 </html>
