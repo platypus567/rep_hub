@@ -19,12 +19,12 @@
 
     <div class="container">
         <div class="row">
-            <div class="col">PFP Placeholder</div>
-            <div class="col">{{name}}</div>
+            <div class="col">
+                <img src="{{data['avatar_url']}}">
+            </div>
+            <div class="col">{{username}} aka {{data['name']}}</div>
         </div>
-        <Div class="row">Bio Placeholder Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil possimus itaque
-            qui quo cum laboriosam iure laudantium. Fugiat quam nulla eum totam fugit maiores qui! Temporibus reiciendis
-            veniam porro eveniet!</Div>
+        <Div class="row">{{data['bio']}}</Div>
     </div>
     <br>
     <div class="container">
@@ -36,14 +36,14 @@
     </div>
     <br>
     <div class="container">
-        <div class="row">clickable up arrow</div>
+        <div class="row"></div>
         <div class="row">clickable down arrow</div>
         <div class="row">large form for review</div>
         <div class="row">submit review button</div>
     </div>
     <br>
     <div class="container">
-        <div class="row">link to github progile of user leaving review with text being there name</div>
+        <div class="row">link to github profile of user leaving review with text being there name</div>
         <div class="row">upvote or downvote arrow depending on neg or pos review (only display 1 arrow)</div>
         <div class="row">review text placeholder Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
             omnis eveniet mollitia, facere nisi sit cumque quibusdam velit consequuntur. Rerum repellat veniam quos
