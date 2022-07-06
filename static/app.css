@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
 html {
     /* background-color: gray IMPOR !important; */
     /* why doesnt this work? */
@@ -9,16 +10,18 @@ body {
     background-color: rgb(192, 192, 192);
 }
 
-#header-div{
+#header-div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#body-copy{
+
+#body-copy {
     background-color: white;
     border-radius: 25px;
 }
-#return{
+
+#return {
     border: 2px solid #F72585;
     color: black;
     background-color: #F72585;
@@ -31,16 +34,27 @@ body {
     border-radius: 15px;
     text-decoration: none;
 }
-#return:hover{
+
+#return:hover {
     border-color: #7209B7;
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em #7209B7;
 }
 
-.wrapper{
+/* ^^ styling for the 'back to search' button on (../search-result.html) which returns your to (../index.html) */
+
+#gh-profile-searched {
+    border: 1px dashed black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
     display: flex;
 
 }
+
 .bg-gradient {
     height: 210px;
     background-color: #7209B7;
@@ -75,14 +89,15 @@ body {
     color: #3c0779;
 }
 
- .search-box {
+.search-box {
     font-size: 50px;
     border: 2px solid black;
     display: inline;
     margin: auto;
     width: 700px;
     height: 50px;
-} 
+}
+
 /* Uncomment the above to override the default bootstrap search bar look. display and margin are still unncessary as long as the bootsrap class form-control is present. */
 
 .search-button {
@@ -136,20 +151,24 @@ error-text {
 }
 
 @media (max-width: 800px) {
-    html{
+    html {
         width: 100%;
     }
-    body{
+
+    body {
         display: flex;
         flex-direction: column;
     }
-    .wrapper{
+
+    .wrapper {
         display: flex;
         flex-direction: column;
     }
-    .search-box{
+
+    .search-box {
         width: 100%;
     }
 }
+
 /* fixes search bar and header going not fully across screen, and alignments
 /* DO NOT TOUCH OR THE STYLES WILL BREAK
