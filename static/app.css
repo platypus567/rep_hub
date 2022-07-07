@@ -5,13 +5,16 @@
 html {
     /* background-color: gray IMPOR !important; */
     /* why doesnt this work? */
+    height: 100%;
     width: 100%;
 }
 
 body {
     background-color: rgb(192, 192, 192);
     height: 100%;
-
+    /*background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);*/
+    background: rgb(0,0,0);
+    background: linear-gradient(315deg, rgba(0,0,0,1) 0%, rgba(67,67,67,1) 66%);
 }
 #flex-block{
     display: flex;
@@ -69,9 +72,10 @@ body {
 
 .bg-gradient-alt {
     height: 210px;
-    background-color: #7209B7;
-    background-image: linear-gradient(to top right, #F72585, #4CC9F0);
-    border-bottom: 10px solid rgb(63, 63, 63);
+    /*off white for cards
+    /*background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+    /*background-image: linear-gradient(to right, #434343 0%, black 100%);*/
+    border-bottom: 10px solid #ddddda;
 
     /* the basic bg at the top of the page on every page , repeated , with different colors*/
 }
@@ -81,15 +85,17 @@ body {
 }
 
 #rep {
-    color: #3c0779;
+    color: black;
+    -webkit-text-stroke: #ddddda 0.25px;
 }
 
 #hub {
-    color: #F72585;
+    color: #ddddda;
 }
 
 #dot-io {
-    color: #3c0779;
+    color: black;
+    -webkit-text-stroke: #ddddda 0.25px;
 }
 
  .search-box {
