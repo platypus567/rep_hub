@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -15,21 +16,24 @@
   <title>{% block title %}{% endblock %}</title>
 </head>
 <style>
-  #logo-head{
+  #logo-head {
     text-decoration: none;
   }
 </style>
+
 <body>
-<div class="container-fluid bg-gradient-alt" id="header-div">
-    <h1 class="logo-text text-center"><a href="{{url_for('home')}}" id="logo-head"><span id="rep">REP</span><span id="hub">_HUB</span><span id="dot-io">.IO</span></a>
+  <div class="container-fluid bg-gradient-alt" id="header-div">
+    <h1 class="col logo-text text-center"><a href="{{url_for('home')}}" id="logo-head"><span id="rep">REP</span><span
+          id="hub">_HUB</span><span id="dot-io">.IO</span></a>
     </h1>
   </div>
-    {% block content %}
+  {% block content %}
 
 
 
-    {% endblock %}
+  {% endblock %}
 
 
 </body>
+
 </html>

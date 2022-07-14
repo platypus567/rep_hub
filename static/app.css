@@ -13,23 +13,27 @@ body {
     height: 100%;
 
 }
-#flex-block{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#header-div{
+
+#header-div {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Overpass',sans-serif;
+    font-family: 'Overpass', sans-serif;
 }
-#body-copy{
+
+#body-copy {
     background-color: white;
     border-radius: 25px;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
-#return{
+
+#body-copy-2 {
+    background-color: white;
+    border-radius: 25px;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+#return {
     border: 2px solid #F72585;
     color: black;
     background-color: #F72585;
@@ -42,22 +46,50 @@ body {
     border-radius: 15px;
     text-decoration: none;
 }
-#return:hover{
+
+#return:hover {
     border-color: #7209B7;
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em #7209B7;
 }
 
-#text-block{
+#flex-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-block {
     border: 1px solid black;
     border-radius: 15px;
     width: 80%
 }
 
-.wrapper{
+#card-1 {
+    border: 1px dashed black;
+    border-radius: 15px;
+}
+
+#gh-pfp {
+    border-radius: 20px;
+    max-width: 75px;
+    max-height: 75px;
+}
+
+#rec {
+    color: green;
+    
+}
+
+#not-rec {
+    color: red;
+}
+
+.wrapper {
     display: flex;
 
 }
+
 .bg-gradient {
     height: 210px;
     background-color: #7209B7;
@@ -92,14 +124,15 @@ body {
     color: #3c0779;
 }
 
- .search-box {
+.search-box {
     font-size: 50px;
     border: 2px solid black;
     display: inline;
     margin: auto;
     width: 700px;
     height: 50px;
-} 
+}
+
 /* Uncomment the above to override the default bootstrap search bar look. display and margin are still unncessary as long as the bootsrap class form-control is present. */
 
 .search-button {
@@ -153,20 +186,24 @@ error-text {
 }
 
 @media (max-width: 800px) {
-    html{
+    html {
         width: 100%;
     }
-    body{
+
+    body {
         display: flex;
         flex-direction: column;
     }
-    .wrapper{
+
+    .wrapper {
         display: flex;
         flex-direction: column;
     }
-    .search-box{
+
+    .search-box {
         width: 100%;
     }
 }
+
 /* fixes search bar and header going not fully across screen, and alignments
 /* DO NOT TOUCH OR THE STYLES WILL BREAK
