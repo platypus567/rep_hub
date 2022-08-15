@@ -70,6 +70,16 @@ body {
     border-radius: 15px;
 }
 
+#card-2 {
+    border: 1px dashed black;
+    border-radius: 15px;
+}
+
+#card-3 {
+    border: 1px dashed black;
+    border-radius: 15px;
+}
+
 #gh-pfp {
     border-radius: 20px;
     max-width: 75px;
@@ -78,11 +88,16 @@ body {
 
 #rec {
     color: green;
-    
+
 }
 
 #not-rec {
     color: red;
+}
+
+.arrow-img {
+    width: 100px;
+    height: 100px;
 }
 
 .wrapper {

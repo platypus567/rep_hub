@@ -33,7 +33,7 @@
 
         </div>
         <br>
-        <div class="container card-2">
+        <div class="container" id="card-2">
             <div class="row text-center">Rep: 800</div>
             <!-- display value of rep score here^ -->
             <div class="row" id="rec">RECOMMENDED</div>
@@ -42,64 +42,21 @@
         </div>
         <br>
         <!-- PROBLEMATIC SECTION BELOW -->
-        <div class="container">
-            <div class="row"><img src="icon-pack/arrow-up.svg" alt="DOESNT WORK"> clickable up arrow</div>
-            <div class="row"><img src="/arrow-up-2.svg" alt="CORRECT LINK, WORKS IN VS CODE"> clickable up arrow</div>
+        <div class="row">Leave a review below</div>
 
-            <div class="row"><img src="../icon-pack/arrow-down.svg" alt="CORRECT LINK, WORKS IN VS CODE"> clickable down
-                arrow</div>
-            <div class="row"><img src="./icon-pack/arrow-down.svg" alt="DOESNT WORK"> clickable down arrow</div>
+        <div class="container" id="card-3">
+            <div class="row arrow-img"><img src="../static/arrow-up-2.svg" alt="clickable arrow"></div>
+            <div class="row arrow-img"><img src="../static/arrow-down-2.svg" alt="clickable arrow"></div>
 
-            <div class="row"><img src="../arrow-down-2.svg" alt="CORRECT LINK, WORKS IN VS CODE"> clickable down arrow
-            </div>
-            <div class="row"><img src="../arrow-up-2.svg" alt="CORRECT LINK, WORKS IN VS CODE"> clickable down arrow
-            </div>
+            <!-- Fixed the issue by placing images in the static folder.-->
 
-            <div class="row"><img src="../shell-command-syntax.svg" alt="CORRECT LINK, WORKS IN VS CODE"> test image
-                from my pc (svg)</div>
-            <div class="row"><img src="../pfp.png" alt="CORRECT LINK, WORKS IN VS CODE"> test image from my pc (png)
-            </div>
-
-            <div class="row"><img src="../icon-pack/shell-command-syntax.svg" alt="CORRECT LINK, WORKS IN VS CODE"> test
-                image from my pc
-                (svg)</div>
-            <div class="row"><img src="../icon-pack/pfp.png" alt="CORRECT LINK, WORKS IN VS CODE"> test image from my pc
-                (png)</div>
-
-            <div class="row"><img src="../shell-command-syntax.svg" alt="CORRECT LINK, WORKS IN VS CODE"> test image
-                from my pc (svg)</div>
-            <div class="row"><img src="../pfp.png" alt="CORRECT LINK, WORKS IN VS CODE"> test image from my pc (png)
-            </div>
-
-            <div class="row"><img src="../icon-pack/arrow-down.svg" alt="CORRECT LINK, WORKS IN VS CODE"> clickable down
-                arrow</div>
-            <div class="row"><img src="./icon-pack/arrow-down.svg" alt="DOESNT WORK"> clickable down arrow</div>
-
-            <div class="row"><img src="../arrow-down-2.svg" alt="CORRECT LINK, WORKS IN VS CODE"> clickable down arrow
-            </div>
-            <div class="row"><img src="../rep-hub/arrow-down-2.svg" alt="DOESNT WORK"> clickable down arrow</div>
-
-            <!-- THIS IS THE MOST FRUSTRATING PROBLEM I HAVE EVER ENCOUNTERED. THE STUPID LINKS ARE ALL RELATIVE AND MOST OF THEM ARE CORRECT, 
-                AS IN I CAN CLICK THEM IN VS CODE AND THEY WORK (ALL NOTED IN ALT PROPERTY). BUT THEN THEY ALL SHOW UP AS BROKEN LINKS IN CHROME -->
-
-            <!-- Something is happening in the terminal with the server, as each attempt to "get" the images returns a 404 at the end of
-                the link. I dont understand Python well enough to figure it out.
-
-                EXAMPLE terminal output (in yellow text): 
-                "GET /icon-pack/arrow-up.svg HTTP/1.1" 404 -
-                "GET /arrow-down-2.svg HTTP/1.1" 404 -
-                "GET /arrow-up-2.svg HTTP/1.1" 404 -
-                "GET /icon-pack/arrow-down.svg HTTP/1.1" 404 -
-                "GET /shell-command-syntax.svg HTTP/1.1" 404 -
-                "GET /pfp.png HTTP/1.1" 404 -
-                "GET /icon-pack/shell-command-syntax.svg HTTP/1.1" 404 -
-                "GET /icon-pack/pfp.png HTTP/1.1" 404 -
-                "GET /rep-hub/arrow-down-2.svg HTTP/1.1" 404 - -->
-
-            <!-- END PROBLMATIC SECTION -->
-
-            <div class="row">large form for review</div>
-            <div class="row">submit review button</div>
+            <form>
+                <div class="form-group user-review">
+                    <label for="user-review"></label>
+                    <textarea class="form-control" id="user-review-text" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit Review</button>
+            </form>
         </div>
         <br>
         <div class="container">
