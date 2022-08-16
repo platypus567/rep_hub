@@ -9,9 +9,8 @@ html {
 }
 
 body {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(192, 192, 192) !important;
     height: 100%;
-
 }
 
 #header-div {
@@ -22,15 +21,19 @@ body {
 }
 
 #body-copy {
+    /* this is for index.html */
     background-color: white;
     border-radius: 25px;
     font-family: 'Open Sans', sans-serif;
 }
 
 #body-copy-2 {
+    /* this is for search-result.html */
     background-color: white;
     border-radius: 25px;
-    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #return {
@@ -48,10 +51,12 @@ body {
 }
 
 #return:hover {
+    /* i dont think this works anymore */
     border-color: #7209B7;
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em #7209B7;
 }
+
 
 #flex-block {
     display: flex;
@@ -86,41 +91,73 @@ body {
     max-height: 75px;
 }
 
+/* begin recommended */
 #rec {
     color: green;
-
 }
+
+#arrow-up {}
+
+#arrow-up:hover {
+    filter: invert(52%) sepia(26%) saturate(6114%) hue-rotate(92deg) brightness(126%) contrast(123%);
+}
+
+#arrow-review-up {
+    filter: invert(52%) sepia(26%) saturate(6114%) hue-rotate(92deg) brightness(126%) contrast(123%);
+}
+
+/* end recommended , start not recommended */
 
 #not-rec {
     color: red;
 }
 
+#arrow-down {}
+
+#arrow-down:hover {
+    filter: invert(35%) sepia(74%) saturate(7383%) hue-rotate(351deg) brightness(95%) contrast(132%);
+}
+
+#arrow-review-down {
+    filter: invert(35%) sepia(74%) saturate(7383%) hue-rotate(351deg) brightness(95%) contrast(132%);
+}
+
+/* end not recommended */
+
 .arrow-img {
     width: 100px;
     height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow-review-img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrapper {
     display: flex;
-
 }
 
 .bg-gradient {
+    /* the basic bg at the top of the page on every page */
     height: 210px;
     background-color: #7209B7;
     background-image: linear-gradient(to bottom right, #F72585, #7209B7);
     border-bottom: 10px solid black;
-
-    /* the basic bg at the top of the page on every page */
 }
 
 .bg-gradient-alt {
+    /* the basic bg at the top of the page on every page , repeated , with different colors*/
     height: 210px;
     background-color: #7209B7;
     background-image: linear-gradient(to top right, #F72585, #4CC9F0);
     border-bottom: 10px solid rgb(63, 63, 63);
-
-    /* the basic bg at the top of the page on every page , repeated , with different colors*/
 }
 
 .logo-text {
@@ -140,6 +177,7 @@ body {
 }
 
 .search-box {
+    /* Uncomment this to override the default bootstrap search bar look. display and margin are still unncessary as long as the bootsrap class form-control is present. */
     font-size: 50px;
     border: 2px solid black;
     display: inline;
@@ -148,21 +186,18 @@ body {
     height: 50px;
 }
 
-/* Uncomment the above to override the default bootstrap search bar look. display and margin are still unncessary as long as the bootsrap class form-control is present. */
-
 .search-button {
     display: inline;
     margin: auto;
 }
 
 .error-bg-lr {
+    /* this is the text box, along with a bg gradient for the "error" message html page (error.html)  */
     height: 820px;
     background-color: #7209B7;
     background-image: linear-gradient(to bottom right, #4CC9F0, #3A0CA3);
     border-bottom: 10px solid black;
     border-top: 10px solid black;
-
-    /* this is the text box, along with a bg gradient for the "error" message html page (error.html)  */
 }
 
 .error-bg-md {
